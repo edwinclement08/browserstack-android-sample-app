@@ -43,5 +43,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
-- task: BrowserStackResults@0
+- task: BrowserStackResults@1
+  inputs:
+    browserstackProduct: 'automate'
 - task: BrowserStackStopLocal@0
